@@ -9,7 +9,7 @@ Milo is an open source business operating system for product-led B2B companies. 
 - **Mission**: To eliminate the undifferentiated heavy lifting that every B2B company faces when scaling operations, identity, and access management.
 - **Vision**: To be the most trusted open foundation for B2B infrastructure, so that any team can ship a production-grade business platform without starting from scratch.
 
-Milo is built in the open and released under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0), giving you full visibility into how it works, the freedom to self-host, and the confidence to build on it long-term.
+We believe the best infrastructure gets built collaboratively, in the open. Milo is licensed under the [AGPL](https://www.gnu.org/licenses/agpl-3.0.html) so that improvements to the foundation are shared back with the community — keeping the core strong for everyone who builds on it.
 
 ---
 
