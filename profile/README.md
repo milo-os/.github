@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" alt="Milo banner" />
+</p>
+
 ## 💡 Vision & mission
 
 Milo is an open source business operating system for product-led B2B companies. It gives you a comprehensive, Kubernetes-native system of record for your organizations, projects, users, and operations — so you can focus on building your product instead of rebuilding the same foundational infrastructure every company needs.
