@@ -42,47 +42,47 @@ Milo is a modular platform. Each service can be deployed independently or togeth
 
 ### Core platform
 
-- [**milo**](https://github.com/milo-os/milo) — The core API server, controllers, and CRDs — organizations, projects, IAM, and the multi-cluster runtime. Start here.
-- [**graphql-gateway**](https://github.com/milo-os/graphql-gateway) — A unified GraphQL API that exposes every Milo resource through a single endpoint.
-- [**service-catalog**](https://github.com/milo-os/service-catalog) — Service registration and governance — the neutral catalog that billing, quota, and telemetry all read from.
+- [**milo**](https://github.com/milo-os/milo) — The foundation: organizations, projects, users, and access control. Start here.
+- [**graphql-gateway**](https://github.com/milo-os/graphql-gateway) — One API for every resource on the platform.
+- [**service-catalog**](https://github.com/milo-os/service-catalog) — A shared registry of every service on the platform — the source of truth for billing, quotas, and monitoring.
 
 ### Identity & access
 
-- [**zitadel-provider**](https://github.com/milo-os/zitadel-provider) — Plugs Zitadel into Milo's provider framework for user authentication and identity management.
-- [**openfga-provider**](https://github.com/milo-os/openfga-provider) — Plugs OpenFGA into Milo's provider framework for fine-grained, relationship-based authorization.
+- [**zitadel-provider**](https://github.com/milo-os/zitadel-provider) — User authentication and identity management, powered by Zitadel.
+- [**openfga-provider**](https://github.com/milo-os/openfga-provider) — Fine-grained, relationship-based authorization, powered by OpenFGA.
 
 ### Finance & monetization
 
-- [**billing**](https://github.com/milo-os/billing) — Manages billing accounts and project-to-account bindings — the authoritative answer to "who pays for this?"
-- [**amberflo-provider**](https://github.com/milo-os/amberflo-provider) — Keeps Milo billing records in sync with Amberflo for usage-based metering and invoicing.
-- [**ramp-provider**](https://github.com/milo-os/ramp-provider) — Syncs vendor accounting data with Ramp to keep finance records consistent with compliance.
+- [**billing**](https://github.com/milo-os/billing) — Tracks who pays for what — billing accounts and their links to projects.
+- [**amberflo-provider**](https://github.com/milo-os/amberflo-provider) — Usage-based metering and invoicing, powered by Amberflo.
+- [**ramp-provider**](https://github.com/milo-os/ramp-provider) — Keeps vendor accounting in sync with Ramp.
 
 ### Operations & reliability
 
-- [**compliance**](https://github.com/milo-os/compliance) — Manages the third-party vendor registry and automates public subprocessor disclosure.
-- [**fraud**](https://github.com/milo-os/fraud) — Pipeline-based fraud detection and risk evaluation via pluggable providers (MaxMind minFraud).
-- [**incidents**](https://github.com/milo-os/incidents) — Kubernetes-native incident management backed by Grafana IRM.
+- [**compliance**](https://github.com/milo-os/compliance) — Tracks third-party vendors and automates public subprocessor disclosures.
+- [**fraud**](https://github.com/milo-os/fraud) — Risk scoring and fraud detection for users and transactions.
+- [**incidents**](https://github.com/milo-os/incidents) — Incident management, backed by Grafana IRM.
 
 ### Networking & infrastructure
 
-- [**bgp**](https://github.com/milo-os/bgp) — Declarative BGP topology management via Kubernetes CRDs, powered by GoBGP. CNI-independent.
-- [**ipam**](https://github.com/milo-os/ipam) — IP address management — synchronous allocation of prefixes, addresses, and AS numbers.
+- [**bgp**](https://github.com/milo-os/bgp) — Declarative network routing via BGP, powered by GoBGP.
+- [**ipam**](https://github.com/milo-os/ipam) — Allocates IP addresses and network prefixes on demand.
 
 ### Observability & activity
 
-- [**resource-metrics**](https://github.com/milo-os/resource-metrics) — Emits custom resource state metrics from Milo control planes as OTLP, replacing per-project kube-state-metrics.
-- [**telemetry**](https://github.com/milo-os/telemetry) — Kubernetes operator for managing Milo's telemetry services and pipelines.
-- [**activity**](https://github.com/milo-os/activity) — Human-readable activity feeds — what happened, who did it, and when.
+- [**resource-metrics**](https://github.com/milo-os/resource-metrics) — Tracks the state of every resource across every project and emits it as metrics.
+- [**telemetry**](https://github.com/milo-os/telemetry) — Manages telemetry pipelines for the platform.
+- [**activity**](https://github.com/milo-os/activity) — A plain-English feed of everything that's happened across your platform.
 
 ### Search & discovery
 
-- [**search**](https://github.com/milo-os/search) — Fast, cross-resource search across the entire Milo platform.
-- [**inventory**](https://github.com/milo-os/inventory) — Asset inventory — a unified view of every resource across every project and cluster.
+- [**search**](https://github.com/milo-os/search) — Find any resource across the platform, fast.
+- [**inventory**](https://github.com/milo-os/inventory) — A complete, up-to-date view of every asset across every project.
 
 ### Communication
 
-- [**resend-provider**](https://github.com/milo-os/resend-provider) — Transactional email delivery via Resend.
-- [**loops-provider**](https://github.com/milo-os/loops-provider) — Lifecycle email campaigns via Loops.
+- [**resend-provider**](https://github.com/milo-os/resend-provider) — Transactional email delivery, powered by Resend.
+- [**loops-provider**](https://github.com/milo-os/loops-provider) — Lifecycle email campaigns, powered by Loops.
 
 ---
 
