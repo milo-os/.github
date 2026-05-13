@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Milo banner" />
+  <img src="https://raw.githubusercontent.com/milo-os/.github/main/profile/banner.png" alt="Milo banner" />
 </p>
 
 ## 💡 Vision & mission
