@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Milo banner" />
+  <img src="https://raw.githubusercontent.com/milo-os/.github/main/profile/banner.png" alt="Milo banner" />
 </p>
 
 ## 💡 Vision & mission
@@ -36,11 +36,53 @@ If you'd like to learn more, check out the [Milo repository](https://github.com/
 
 ---
 
-## 👀 Our main projects
+## 🗂️ Services & components
 
-- [**milo**](https://github.com/datum-cloud/milo) — The core Milo API server, controllers, and CRDs. Start here.
+Milo is a modular platform. Each service can be deployed independently or together as a full stack.
 
-More components will live here as Milo grows into a full suite of open source services.
+### Core platform
+
+- [**milo**](https://github.com/milo-os/milo) — The foundation: organizations, projects, users, and access control. Start here.
+- [**graphql-gateway**](https://github.com/milo-os/graphql-gateway) — One API for every resource on the platform.
+- [**service-catalog**](https://github.com/milo-os/service-catalog) — A shared registry of every service on the platform — the source of truth for billing, quotas, and monitoring.
+
+### Identity & access
+
+- [**zitadel-provider**](https://github.com/milo-os/zitadel-provider) — User authentication and identity management, powered by Zitadel.
+- [**openfga-provider**](https://github.com/milo-os/openfga-provider) — Fine-grained, relationship-based authorization, powered by OpenFGA.
+
+### Finance & monetization
+
+- [**billing**](https://github.com/milo-os/billing) — Tracks who pays for what — billing accounts and their links to projects.
+- [**amberflo-provider**](https://github.com/milo-os/amberflo-provider) — Usage-based metering and invoicing, powered by Amberflo.
+- [**ramp-provider**](https://github.com/milo-os/ramp-provider) — Keeps vendor accounting in sync with Ramp.
+
+### Operations & reliability
+
+- [**compliance**](https://github.com/milo-os/compliance) — Tracks third-party vendors and automates public subprocessor disclosures.
+- [**fraud**](https://github.com/milo-os/fraud) — Risk scoring and fraud detection for users and transactions.
+- [**incidents**](https://github.com/milo-os/incidents) — Incident management, backed by Grafana IRM.
+
+### Networking & infrastructure
+
+- [**bgp**](https://github.com/milo-os/bgp) — Declarative network routing via BGP, powered by GoBGP.
+- [**ipam**](https://github.com/milo-os/ipam) — Allocates IP addresses and network prefixes on demand.
+
+### Observability & activity
+
+- [**resource-metrics**](https://github.com/milo-os/resource-metrics) — Tracks the state of every resource across every project and emits it as metrics.
+- [**telemetry**](https://github.com/milo-os/telemetry) — Manages telemetry pipelines for the platform.
+- [**activity**](https://github.com/milo-os/activity) — A plain-English feed of everything that's happened across your platform.
+
+### Search & discovery
+
+- [**search**](https://github.com/milo-os/search) — Find any resource across the platform, fast.
+- [**inventory**](https://github.com/milo-os/inventory) — A complete, up-to-date view of every asset across every project.
+
+### Communication
+
+- [**resend-provider**](https://github.com/milo-os/resend-provider) — Transactional email delivery, powered by Resend.
+- [**loops-provider**](https://github.com/milo-os/loops-provider) — Lifecycle email campaigns, powered by Loops.
 
 ---
 
