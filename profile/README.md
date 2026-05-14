@@ -65,7 +65,7 @@ Milo is a modular platform. Each service can be deployed independently or togeth
 
 ### Networking & infrastructure
 
-- [**bgp**](https://github.com/milo-os/bgp) — Declarative network routing via BGP, powered by GoBGP.
+- [**cosmos**](https://github.com/milo-os/cosmos) — Declarative network configuration
 - [**ipam**](https://github.com/milo-os/ipam) — Allocates IP addresses and network prefixes on demand.
 
 ### Observability & activity
