@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Shared Renovate settings for milo-os repositories. Go module updates open one pull request per repository, with Kubernetes modules in a pull request of their own. Security fixes keep Renovate's default of opening immediately and outside the concurrency limit.",
+  "rebaseWhen": "conflicted",
+  "prConcurrentLimit": 5,
+  "packageRules": [
+    {
+      "description": "One pull request for all other Go module updates, so merging one does not rebase a queue of siblings",
+      "matchManagers": ["gomod"],
+      "groupName": "Go modules",
+      "groupSlug": "go-modules"
+    },
+    {
+      "description": "k8s.io/kubernetes only builds against staging modules of the same release, so bump it, every pinned staging module and controller-runtime together",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": [
+        "k8s.io/**",
+        "sigs.k8s.io/controller-runtime",
+        "sigs.k8s.io/multicluster-runtime",
+        "!k8s.io/klog/**",
+        "!k8s.io/utils",
+        "!k8s.io/kube-openapi"
+      ],
+      "groupName": "kubernetes",
+      "groupSlug": "kubernetes"
+    }
+  ]
+}
