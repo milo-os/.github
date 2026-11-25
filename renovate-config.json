@@ -7,6 +7,7 @@
     {
       "description": "One pull request for all other Go module updates, so merging one does not rebase a queue of siblings",
       "matchManagers": ["gomod"],
+      "matchDatasources": ["go"],
       "groupName": "Go modules",
       "groupSlug": "go-modules"
     },
