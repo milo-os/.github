@@ -12,7 +12,7 @@
       "groupSlug": "go-modules"
     },
     {
-      "description": "Go module patch and digest updates get a pull request of their own, which the shared datum-cloud policy opens without approval",
+      "description": "Go module patch and digest updates form their own pull request, so they can open without approval",
       "matchManagers": ["gomod"],
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["patch", "digest"],
@@ -34,7 +34,7 @@
       "groupSlug": "kubernetes"
     },
     {
-      "description": "Kubernetes patch releases move together in a pull request of their own, which the shared datum-cloud policy opens without approval",
+      "description": "Kubernetes patch releases move together in their own pull request, so they can open without approval",
       "matchManagers": ["gomod"],
       "matchPackageNames": [
         "k8s.io/**",
