@@ -16,7 +16,7 @@
       "matchManagers": ["gomod"],
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["patch", "digest"],
-      "groupName": "Go modules (patch)",
+      "groupName": "Go modules",
       "groupSlug": "go-modules-patch"
     },
     {
@@ -45,7 +45,7 @@
         "!k8s.io/kube-openapi"
       ],
       "matchUpdateTypes": ["patch"],
-      "groupName": "kubernetes (patch)",
+      "groupName": "kubernetes",
       "groupSlug": "kubernetes-patch"
     }
   ]
